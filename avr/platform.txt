@@ -1,0 +1,10 @@
+# Mega2560 + Xmem
+# --------------------------------------------------------------------------->>
+# We are leaving it up to the IDE to decide what platform specifics to use.
+# The sole purpouse of this file is to have the header name in the boards list
+# See also this useful thread: 
+# https://forum.arduino.cc/index.php?topic=457405.msg4260721#msg4260721
+# --------------------------------------------------------------------------->>
+
+name=Mega2560 + Xmem
+version=1.0.0
