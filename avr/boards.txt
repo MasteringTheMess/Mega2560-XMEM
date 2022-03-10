@@ -1,6 +1,4 @@
 
-menu.cpu=Processor
-
 ##############################################################
 
 mega.name=Mega 2560 + Xmem
@@ -31,28 +29,29 @@ mega.upload_port.5.vid=0x2341
 mega.upload_port.5.pid=0x0242
 mega.upload_port.6.board=mega
 
-mega.bootloader.tool=avrdude
-mega.bootloader.tool.default=avrdude
-mega.bootloader.low_fuses=0xFF
-mega.bootloader.unlock_bits=0x3F
-mega.bootloader.lock_bits=0x0F
-
-mega.build.f_cpu=16000000L
-mega.build.core=arduino
-mega.build.variant=mega
-mega.build.board=AVR_MEGA2560
-mega.build.mcu=atmega2560
-
-mega.upload.tool=avrdude
-mega.upload.tool.default=avrdude
-mega.upload.tool.network=arduino_ota
-mega.upload.maximum_data_size=8192
+mega.upload.tool=arduino:avrdude
+mega.upload.tool.default=arduino:avrdude
+mega.upload.tool.network=arduino:arduino_ota
 mega.upload.protocol=wiring
 mega.upload.maximum_size=253952
+#mega.upload.maximum_data_size=8192
+mega.upload.maximum_data_size=40960
 mega.upload.speed=115200
 
+mega.bootloader.tool=arduino:avrdude
+mega.bootloader.tool.default=arduino:avrdude
+mega.bootloader.low_fuses=0xFF
 mega.bootloader.high_fuses=0xD8
 mega.bootloader.extended_fuses=0xFD
+mega.bootloader.unlock_bits=0x3F
+mega.bootloader.lock_bits=0x0F
 mega.bootloader.file=stk500v2/stk500boot_v2_mega2560.hex
+
+mega.build.mcu=atmega2560
+mega.build.f_cpu=16000000L
+mega.build.board=AVR_MEGA2560
+mega.build.core=arduino:arduino
+mega.build.variant=xmem
+
 
 ##############################################################
